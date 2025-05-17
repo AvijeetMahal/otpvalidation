@@ -11,7 +11,7 @@ const cors=require('cors');
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins=['https://otpvalidation-backend.onrender.com']
+const allowedOrigins=['http://localhost:5173']
 app.use(express.json()); 
 app.use(cors())
 app.use(cookieParser());
