@@ -15,6 +15,10 @@ app.use(cookieParser());
 app.use(cors(
  { origin:"otpvalidation-frontend.onrender.com/",
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  accessControlAllowOrigin: true,
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization'],
+
  }
  
 ))
