@@ -12,7 +12,6 @@ connectDB();
 
 const allowedOrigins=['https://otpvalidation-backend.onrender.com']
 app.use(express.json()); 
-app.use(cors())
 app.use(cookieParser());
 app.use(cors({origin: allowedOrigins, credentials:true}))
 
