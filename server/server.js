@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins=['https://otpvalidation-backend.onrender.com']
+const allowedOrigins=['https://otpvalidation-frontend.onrender.com']
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(cors({origin: allowedOrigins, credentials:true}))
