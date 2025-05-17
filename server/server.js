@@ -13,7 +13,10 @@ connectDB();
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(cors(
- { origin:"https://otpvalidation-frontend.onrender.com/"}
+ { origin:"https://otpvalidation-frontend.onrender.com/",
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+ }
+ 
 ))
 
 
