@@ -7,7 +7,6 @@ import authRouter from './routes/authRoutes.js';
 import userRouter from './routes/userRoutes.js';
 
 const app = express();
-const cors=require('cors');
 const port = process.env.PORT || 4000;
 connectDB();
 
