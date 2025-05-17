@@ -16,7 +16,7 @@ app.use(cors(
  { origin:"otpvalidation-frontend.onrender.com/",
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   accessControlAllowOrigin: false,
-  credentials: true,
+  credentials: false,
   allowedHeaders: ['Content-Type', 'Authorization'],
 
  }
