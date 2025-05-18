@@ -12,16 +12,7 @@ connectDB();
 
 app.use(express.json()); 
 app.use(cookieParser());
-app.use(cors(
- { origin:"otpvalidation-frontend.onrender.com/",
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  accessControlAllowOrigin: false,
-  credentials: false,
-  allowedHeaders: ['Content-Type', 'Authorization'],
-
- }
- 
-))
+app.use(cors())
 
 
 app.get('/', (req, res) => {
