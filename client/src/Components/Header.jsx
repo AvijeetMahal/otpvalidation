@@ -21,7 +21,7 @@ const {userData} = useContext(AppContext)
         <p className='mb-8 max-w-md'>Let's start with a quick product tour and we will have you up and running in no time</p>
         
         <ul>
-          <li><Link to={'/login'}>Get Started</Link></li>
+          <li className='border border-gray-500 rounded-full px-8 py-2.5 hover:bg-gray-100 transition-all'><Link to={'/login'}>Get Started</Link></li>
         </ul>
     </div>
   )
