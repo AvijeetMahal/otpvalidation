@@ -25,7 +25,7 @@ const getUthState=async()=>{
 
 const getUserData = async () => {
     try {
-        const {data}=await axios.get(backendUrl+'/api/user/data')
+        const {data}=await axios.get(backendUrl+'/api/user/data',{withCredentials:true})
         data.success ? setUserData(data.userData):toast.error(data.message) 
     } catch (error) {
         toast.error(error.message)
