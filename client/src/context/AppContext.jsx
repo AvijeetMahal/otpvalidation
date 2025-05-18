@@ -13,7 +13,7 @@ const [userData, setUserData] = useState(false)
 
 const getUthState=async()=>{
     try {
-        const {data}=await axios.get(backendUrl+'/api/auth/is-auth')
+        const {data}=await axios.get(backendUrl+'/api/auth/is-auth',{withCredentials:true})
         if (data.success) {
             setIsLoggedin(true)
             getUserData()
