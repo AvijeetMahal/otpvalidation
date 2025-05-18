@@ -21,7 +21,7 @@ const {userData} = useContext(AppContext)
         <p className='mb-8 max-w-md'>Let's start with a quick product tour and we will have you up and running in no time</p>
         
         <ul>
-          <li><LInk to={'/login'}>Get Started</LInk></li>
+          <li><Link to={'/login'}>Get Started</Link></li>
         </ul>
     </div>
   )
